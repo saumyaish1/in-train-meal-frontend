@@ -3,13 +3,13 @@
         <b-row>
             <b-col md="6"  class="offset-0 offset-md-3 col-12">
                 <h1>Register</h1>
-                <hr />
+                <hr /> <br>
                 <form name="form" @submit.prevent="login">
                     <div class="form-group">
                         <label for="name">Full Name</label>
                         <input type="name" class="form-control" name="name" id="mane" placeholder="Your Name"
                             v-model="form.email" 
-                            @blur="$v.form.email.$touch()" />
+                            @blur="$v.form.email.$touch()" /> <br>
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email"
                             placeholder="your email id goes here" v-model="form.email" @blur="$v.form.email.$touch()"
@@ -57,7 +57,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <button class="btn btn-danger" :disabled="$v.form.$invalid">Sign Up</button>
+                        <button class="btn btn-danger" :disabled="$v.form.$invalid">Sign In</button>
                         <app-spinner v-if="processing" />
                     </div>
                 </form>
@@ -139,5 +139,7 @@ export default {
 </script>
 
 <style scoped>
-
+form {
+    text-align: justify;
+}
 </style>
