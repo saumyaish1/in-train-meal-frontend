@@ -6,10 +6,7 @@
                 <hr /> <br>
                 <form name="form" @submit.prevent="login">
                     <div class="form-group">
-                        <label for="name">Full Name</label>
-                        <input type="name" class="form-control" name="name" id="mane" placeholder="Your Name"
-                            v-model="form.email" 
-                            @blur="$v.form.email.$touch()" /> <br>
+                      <br>
                         <label for="email">Email</label>
                         <input type="email" class="form-control" name="email" id="email"
                             placeholder="your email id goes here" v-model="form.email" @blur="$v.form.email.$touch()"
